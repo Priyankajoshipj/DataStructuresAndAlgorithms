@@ -58,7 +58,7 @@ def word_break(s, wordDict): #Time limit exceeded, Leetcode
     return helper_dp(s,wordDict, 0, 1, {})
 
 #Optimized DP
-
+# [Accepted]
 def word_break_DP_optimized(s, wordDict):
 	wordDict = set(wordDict)
  	if not s:
