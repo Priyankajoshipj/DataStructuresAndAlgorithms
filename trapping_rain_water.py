@@ -1,3 +1,4 @@
+#42. Trapping Rain Water Leetcode Hard[Accepted]
 def trapping_rain_water(height):
 	#2 pass approach - Dynamic Programming Time and space complexity O(n)
 	if not height:
@@ -19,7 +20,7 @@ def trapping_rain_water(height):
 
 	return area
 
-#approach 2: Two pointer solution time O(n), space O(1)
+#approach 2: Two pointer solution time O(n), space O(1) beats 97% solution
 def trapping_rain_water(height):
 	if not height:
         return 0
