@@ -37,3 +37,4 @@ class Solution(object):
             nodeN.next = prev
             prev = nodeN
             nodeN = nextNode
+        return prev
