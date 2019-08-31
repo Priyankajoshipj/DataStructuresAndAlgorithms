@@ -3,6 +3,7 @@
 Input: [10,9,2,5,3,7,101,18]
 Output: [2,3,7,101] -> 4
 '''
+# Time Complexity O(n^2)
 def lengthOfLIS(nums):
 	res = []
     if not nums:
@@ -23,3 +24,7 @@ def lengthOfLIS(nums):
         right += 1
 
     return maxLIS
+
+# Time complexity O(nlogn)
+
+def lengthOfLIS(nums):
