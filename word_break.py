@@ -8,9 +8,9 @@
 # TRY Dynamic Programming
 def word_break(s, wordDict): #Time limit exceeded, Leetcode
 	if not s:
-            return true
-        if s in wordDict:
-            return True
+        return true
+    if s in wordDict:
+        return True
     def helper_rec(s, wordDict, left, right):
         n = len(s)
         if right >= n:
@@ -34,7 +34,7 @@ def word_break(s, wordDict): #Time limit exceeded, Leetcode
  def word_break_DP(s, wordDict): 
  	wordDict = set(wordDict)
  	if not s:
-            return true
+        return true
     if s in wordDict:
         return True
     def helper_dp(s, wordDict, left, right, s_array):
@@ -61,8 +61,9 @@ def word_break(s, wordDict): #Time limit exceeded, Leetcode
 # [Accepted]
 def word_break_DP_optimized(s, wordDict):
 	wordDict = set(wordDict)
- 	if not s:
-            return true
+ 	
+    if not s:
+        return true
     if s in wordDict:
         return True
     n = len(s)

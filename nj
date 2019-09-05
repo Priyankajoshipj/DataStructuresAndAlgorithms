@@ -1,0 +1,22 @@
+"(()())(())"
+stack = [(s]
+()()()
+def removeOuterParenthesis(s):
+	stack = []
+	mapping ={")": "(", "}": "{", "]": "["}
+	out = ''
+	for c in s:
+		if not stack:
+			stack.append(c)
+			stack.append('s')
+
+		if c not in mapping:
+			stack.append(c)
+		else:
+			p = stack.pop()
+			if p != 's':
+				out += p + c
+			else:
+				stack.pop()
+        
+    return out
